@@ -1,0 +1,18 @@
+model_list:
+  - model_name: gemini-2.0-flash
+    litellm_params:
+      model: gemini/gemini-2.0-flash
+      api_key: os.environ/GOOGLE_API_KEY
+      
+  # This catch-all allows you to use any default model not explicitly defined
+  - model_name: "*" 
+    litellm_params:
+      model: "*"
+
+litellm_settings:
+  drop_params: True
+  success_callback: []  # Add callbacks if needed
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY  # Read master key from environment variable
+  use_database: False 
