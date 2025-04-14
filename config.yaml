@@ -4,6 +4,11 @@ model_list:
       model: gemini/gemini-2.0-flash
       api_key: os.environ/GOOGLE_API_KEY
       
+  - model_name: gemma3-12b-it
+    litellm_params:
+      model: ollama/gemma3:12b-it-q8_0
+      api_base: os.environ/OLLAMA_API_BASE
+      
   # This catch-all allows you to use any default model not explicitly defined
   - model_name: "*" 
     litellm_params:
