@@ -20,4 +20,4 @@ litellm_settings:
 
 general_settings:
   master_key: os.environ/LITELLM_MASTER_KEY  # Read master key from environment variable
-  use_database: False 
+  use_database: False
