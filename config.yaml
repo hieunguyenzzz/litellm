@@ -84,6 +84,11 @@ model_list:
       model: ollama/qwen3:30b-a3b
       api_base: os.environ/OLLAMA_API_BASE
 
+  - model_name: qwen3-30b-a3b-mlx
+    litellm_params:
+      model: lm_studio/qwen3-30b-a3b-mlx
+      api_base: os.environ/LM_STUDIO_API_BASE
+
   # This catch-all allows you to use any default model not explicitly defined
   - model_name: "*"
     litellm_params:
