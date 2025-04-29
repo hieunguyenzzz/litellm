@@ -89,6 +89,11 @@ model_list:
       model: lm_studio/qwen3-30b-a3b-mlx
       api_base: os.environ/LM_STUDIO_API_BASE
       api_key: lm-studio
+  - model_name: qwen3-30b-a3b
+    litellm_params:
+      model: lm_studio/qwen3-30b-a3b
+      api_base: os.environ/LM_STUDIO_API_BASE
+      api_key: lm-studio
 
   # This catch-all allows you to use any default model not explicitly defined
   - model_name: "*"
