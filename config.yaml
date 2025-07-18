@@ -95,6 +95,12 @@ model_list:
       api_base: os.environ/LM_STUDIO_API_BASE
       api_key: lm-studio
 
+  # MoonshotAI Kimi K2 (free) - OpenRouter
+  - model_name: kimi-k2-free
+    litellm_params:
+      model: openrouter/moonshotai/kimi-k2:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
   # This catch-all allows you to use any default model not explicitly defined
   - model_name: "*"
     litellm_params:
