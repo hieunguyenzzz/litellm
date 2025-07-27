@@ -117,7 +117,7 @@ model_list:
   - model_name: qwen3-235b-a22b-thinking-2507
     litellm_params:
       model: deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507
-      api_key: os.environ/DEEPINFRA_API_KEY
+      api_key: os.environ/OPENROUTER_API_KEY
 
   # This catch-all allows you to use any default model not explicitly defined
   - model_name: "*"
