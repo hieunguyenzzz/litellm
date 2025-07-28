@@ -107,6 +107,12 @@ model_list:
       model: openrouter/qwen/qwen3-coder:free
       api_key: os.environ/OPENROUTER_API_KEY
 
+  # Qwen3 Coder (standard) - OpenRouter
+  - model_name: qwen3-coder
+    litellm_params:
+      model: openrouter/qwen/qwen3-coder
+      api_key: os.environ/OPENROUTER_API_KEY
+
   # Qwen3 235B A22B Instruct 2507 (free) - OpenRouter
   - model_name: qwen3-235b-a22b-2507-free
     litellm_params:
