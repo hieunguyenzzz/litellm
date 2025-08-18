@@ -155,6 +155,12 @@ model_list:
       model: openrouter/qwen/qwen3-235b-a22b-thinking-2507
       api_key: os.environ/OPENROUTER_API_KEY
 
+  # Z.AI GLM 4.5 - OpenRouter
+  - model_name: glm-4.5
+    litellm_params:
+      model: openrouter/z-ai/glm-4.5
+      api_key: os.environ/OPENROUTER_API_KEY
+
   # This catch-all allows you to use any default model not explicitly defined
   - model_name: "*"
     litellm_params:
