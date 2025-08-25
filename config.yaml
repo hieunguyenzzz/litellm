@@ -89,7 +89,7 @@ model_list:
   - model_name: gpt-oss-20b
     litellm_params:
       model: openai/gpt-oss-20b
-      api_base: os.environ/LM_STUDIO_API_BASE
+      api_base: os.environ/OLLAMA_API_BASE
 
   - model_name: mistral-small3.1
     litellm_params:
