@@ -161,6 +161,12 @@ model_list:
       model: openrouter/z-ai/glm-4.5
       api_key: os.environ/OPENROUTER_API_KEY
 
+  # OpenAI GPT-OSS-120B - OpenRouter
+  - model_name: gpt-oss-120b
+    litellm_params:
+      model: openrouter/openai/gpt-oss-120b
+      api_key: os.environ/OPENROUTER_API_KEY
+
   # This catch-all allows you to use any default model not explicitly defined
   - model_name: "*"
     litellm_params:
